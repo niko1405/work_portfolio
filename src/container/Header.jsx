@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
-import Spline from "@splinetool/react-spline";
 import { useSelector } from "react-redux";
 
 import AppWrap from "../wrapper/AppWrap";
