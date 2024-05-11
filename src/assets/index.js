@@ -48,7 +48,7 @@ import sevenWildSurvey from "./videos/7InTheWild-Survey.mp4";
 import sevenWildVoting from "./videos/7InTheWild-Voting.mp4";
 
 import bukkitJumper from "./videos/Bukkit-Jumper.mp4";
-import bukkitLobbySystem from "./videos/Bukkit-LobbySystem.mp4";
+import bukkitLobbySystem from "./videos/Bukkit-Lobbysystem.mp4";
 
 import memoMessages from "./videos/memories-messages.mp4";
 import memoPosts from "./videos/memories-posts.mp4";
