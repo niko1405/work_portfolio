@@ -28,7 +28,7 @@ const AppWrap = (Component, idName, classNames) =>
         <div className="w-screen h-screen absolute flex opacity-40">
           <img
             id={`parallax_bg_${idName}`}
-            src="./src/assets/images/main-bg-parallax3.png"
+            src="./assets/images/main-bg-parallax3.png"
             className="absolute top-[20%] right-[27%] h-2/3 w-auto mobile:top-[25%] mobile:right-0 mobile:h-1/2"
           />
         </div>

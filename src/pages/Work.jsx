@@ -19,7 +19,10 @@ const MCPluginDetails = () => {
           autoPlay
           className="w-1/2 noDesktop:w-full"
         >
-          <source src="assets/videos/Bukkit-Lobbysystem.mp4" type="video/mp4" />
+          <source
+            src="./assets/videos/Bukkit-Lobbysystem.mp4"
+            type="video/mp4"
+          />
         </motion.video>
         <motion.div
           initial={{ opacity: 0, x: 30 }}
@@ -60,7 +63,7 @@ const MCPluginDetails = () => {
           autoPlay
           className="w-1/2 noDesktop:w-full"
         >
-          <source src="assets/videos/Bukkit-Jumper.mp4" type="video/mp4" />
+          <source src="./assets/videos/Bukkit-Jumper.mp4" type="video/mp4" />
         </motion.video>
         <motion.div
           initial={{ opacity: 0, x: 30 }}
@@ -113,7 +116,7 @@ const SocialMediaAppDetails = () => {
           transition={{ duration: 0.5, damping: 0, delay: 0.2 }}
           className="relative flex flex-row w-1/2 h-auto noDesktop:flex-col noDesktop:w-full noDesktop:m-0 mr-4"
         >
-          <img src="assets/images/memories_app/memories-home.png" />
+          <img src="./assets/images/memories_app/memories-home.png" />
           <div className="flex flex-col items-start h-auto w-full pl-7 noDesktop:p-0 noDesktop:mt-5">
             <p className="text-2xl font-truculenta font-bold tracking-wide text-white mb-2">
               Memories - Social Media App
@@ -137,7 +140,7 @@ const SocialMediaAppDetails = () => {
           className="relative flex flex-row w-1/2 h-auto noDesktop:flex-col noDesktop:w-full"
         >
           <img
-            src="assets/images/memories_app/memories-auth.png"
+            src="./assets/images/memories_app/memories-auth.png"
             height="90%"
           />
           <div className="flex flex-col items-start h-auto w-full pl-7 noDesktop:p-0 noDesktop:mt-5">
@@ -164,7 +167,7 @@ const SocialMediaAppDetails = () => {
         >
           <video muted loop autoPlay>
             <source
-              src="assets/videos/memories-settings.mp4"
+              src="./assets/videos/memories-settings.mp4"
               type="video/mp4"
               width="10%"
               height="auto"
@@ -190,7 +193,7 @@ const SocialMediaAppDetails = () => {
         >
           <video muted loop autoPlay>
             <source
-              src="assets/videos/memories-search.mp4"
+              src="./assets/videos/memories-search.mp4"
               type="video/mp4"
               width="10%"
               height="auto"
@@ -218,7 +221,7 @@ const SocialMediaAppDetails = () => {
         >
           <video muted loop autoPlay>
             <source
-              src="assets/videos/memories-profile.mp4"
+              src="./assets/videos/memories-profile.mp4"
               type="video/mp4"
               width="10%"
               height="auto"
@@ -246,7 +249,7 @@ const SocialMediaAppDetails = () => {
         >
           <video muted loop autoPlay>
             <source
-              src="assets/videos/memories-messages.mp4"
+              src="./assets/videos/memories-messages.mp4"
               type="video/mp4"
               width="10%"
               height="auto"
@@ -274,7 +277,7 @@ const SocialMediaAppDetails = () => {
         >
           <video muted loop autoPlay>
             <source
-              src="assets/videos/memories-posts.mp4"
+              src="./assets/videos/memories-posts.mp4"
               type="video/mp4"
               width="10%"
               height="auto"
@@ -313,7 +316,7 @@ const ReactNativeDetails = () => {
         >
           <video muted loop autoPlay>
             <source
-              src="assets/videos/7InTheWild-Home.mp4"
+              src="./assets/videos/7InTheWild-Home.mp4"
               type="video/mp4"
               width="10%"
               height="auto"
@@ -341,7 +344,7 @@ const ReactNativeDetails = () => {
           className="relative flex flex-row w-1/2 h-auto noDesktop:flex-col noDesktop:w-full"
         >
           <img
-            src="assets/images/7InTheWild/7InTheWild-register.jpg"
+            src="./assets/images/7InTheWild/7InTheWild-register.jpg"
             height="90%"
           />
           <div className="flex flex-col items-start h-auto w-full pl-7 noDesktop:p-0 noDesktop:mt-5">
@@ -361,7 +364,7 @@ const ReactNativeDetails = () => {
         <div className="relative flex flex-row w-1/2 h-auto noDesktop:flex-col noDesktop:w-full mr-4">
           <video muted loop autoPlay>
             <source
-              src="assets/videos/7InTheWild-Profile.mp4"
+              src="./assets/videos/7InTheWild-Profile.mp4"
               type="video/mp4"
               width="10%"
               height="auto"
@@ -383,7 +386,7 @@ const ReactNativeDetails = () => {
         <div className="relative flex flex-row w-1/2 h-auto noDesktop:flex-col noDesktop:w-full">
           <video muted loop autoPlay>
             <source
-              src="assets/videos/7InTheWild-Survey.mp4"
+              src="./assets/videos/7InTheWild-Survey.mp4"
               type="video/mp4"
               width="10%"
               height="auto"
@@ -406,7 +409,7 @@ const ReactNativeDetails = () => {
         <div className="relative flex flex-row w-1/2 h-auto noDesktop:flex-col noDesktop:w-full mr-4">
           <video muted loop autoPlay>
             <source
-              src="assets/videos/7InTheWild-Messages.mp4"
+              src="./assets/videos/7InTheWild-Messages.mp4"
               type="video/mp4"
               width="10%"
               height="auto"
@@ -429,7 +432,7 @@ const ReactNativeDetails = () => {
         <div className="relative flex flex-row w-1/2 h-auto noDesktop:flex-col noDesktop:w-full">
           <video muted loop autoPlay>
             <source
-              src="assets/videos/7InTheWild-LiveChat.mp4"
+              src="./assets/videos/7InTheWild-LiveChat.mp4"
               type="video/mp4"
               width="10%"
               height="auto"
@@ -452,7 +455,7 @@ const ReactNativeDetails = () => {
         <div className="relative flex flex-row w-1/2 h-auto noDesktop:flex-col noDesktop:w-full mr-4">
           <video muted loop autoPlay>
             <source
-              src="assets/videos/7InTheWild-Discover.mp4"
+              src="./assets/videos/7InTheWild-Discover.mp4"
               type="video/mp4"
               width="10%"
               height="auto"
@@ -477,7 +480,7 @@ const ReactNativeDetails = () => {
         <div className="relative flex flex-row w-1/2 h-auto noDesktop:flex-col noDesktop:w-full">
           <video muted loop autoPlay>
             <source
-              src="assets/videos/7InTheWild-Voting.mp4"
+              src="./assets/videos/7InTheWild-Voting.mp4"
               type="video/mp4"
               width="10%"
               height="auto"
@@ -503,7 +506,7 @@ const ReactNativeDetails = () => {
         <div className="relative flex flex-row h-auto noDesktop:flex-col w-full mr-4">
           <video muted loop autoPlay>
             <source
-              src="assets/videos/7InTheWild-Settings.mp4"
+              src="./assets/videos/7InTheWild-Settings.mp4"
               type="video/mp4"
               width="10%"
               height="auto"
@@ -530,7 +533,7 @@ const ReactNativeDetails = () => {
         <div className="relative flex flex-row h-auto noDesktop:flex-col w-full mr-4">
           <video muted loop autoPlay className="w-1/2 noDesktop:w-full">
             <source
-              src="assets/videos/7InTheWild-AP-Home.mp4"
+              src="./assets/videos/7InTheWild-AP-Home.mp4"
               type="video/mp4"
             />
           </video>
@@ -552,7 +555,7 @@ const ReactNativeDetails = () => {
         <div className="relative flex flex-row h-auto noDesktop:flex-col w-full mr-4">
           <video muted loop autoPlay className="w-1/2 noDesktop:w-full">
             <source
-              src="assets/videos/7InTheWild-AP-Post.mp4"
+              src="./assets/videos/7InTheWild-AP-Post.mp4"
               type="video/mp4"
             />
           </video>
@@ -578,7 +581,7 @@ const ReactNativeDetails = () => {
         <div className="relative flex flex-row h-auto noDesktop:flex-col w-full mr-4">
           <video muted loop autoPlay className="w-1/2 noDesktop:w-full">
             <source
-              src="assets/videos/7InTheWild-AP-Survey.mp4"
+              src="./assets/videos/7InTheWild-AP-Survey.mp4"
               type="video/mp4"
             />
           </video>
