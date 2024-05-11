@@ -19,7 +19,7 @@ const About = () => {
           className="w-1/2 mobile:w-full relative"
         >
           <img
-            src="./src/assets/images/AboutPic.png"
+            src="assets/images/AboutPic.png"
             className="w-full h-auto shadow-2xl shadow-[#506b8a]"
           />
           <motion.div
