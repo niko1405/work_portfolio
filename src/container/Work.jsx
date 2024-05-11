@@ -19,7 +19,7 @@ const Work = () => {
           className="w-1/2 mobile:w-full relative"
         >
           <img
-            src="./assets/images/WebDev.jpg"
+            src="/work_portfolio/assets/images/WebDev.jpg"
             className="w-full h-auto shadow-2xl shadow-[#506b8a]"
           />
           <motion.div

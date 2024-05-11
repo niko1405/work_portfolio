@@ -23,12 +23,12 @@ const AppWrap = (Component, idName, classNames) =>
     return (
       <div
         id={idName}
-        className={`w-full min-h-screen bg-[url('./assets/images/tech-wallpaper.jpeg')] bg-contain bg-no-repeat bg-right noDesktop:bg-center noDesktop:bg-cover flex flex-row relative ${classNames}`}
+        className={`w-full min-h-screen bg-[url('/work_portfolio/assets/images/tech-wallpaper.jpeg')] bg-contain bg-no-repeat bg-right noDesktop:bg-center noDesktop:bg-cover flex flex-row relative ${classNames}`}
       >
         <div className="w-screen h-screen absolute flex opacity-40">
           <img
             id={`parallax_bg_${idName}`}
-            src="./assets/images/main-bg-parallax3.png"
+            src="/work_portfolio/assets/images/main-bg-parallax3.png"
             className="absolute top-[20%] right-[27%] h-2/3 w-auto mobile:top-[25%] mobile:right-0 mobile:h-1/2"
           />
         </div>
