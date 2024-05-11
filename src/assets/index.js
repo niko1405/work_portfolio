@@ -34,7 +34,7 @@ import bgParallax from "./images/main-bg-parallax.png";
 import businessWorld from "./images/business-world.png";
 import cardBg from "./images/cardBackground.jpg";
 
-import sevenWildRegister from "./images/7InTheWild-Register.jpg";
+import sevenWildRegister from "./images/7InTheWild/7InTheWild-Register.jpg";
 import sevenWildAPHome from "./videos/7InTheWild-AP-Home.mp4";
 import sevenWildAPPost from "./videos/7InTheWild-AP-Post.mp4";
 import sevenWildAPSurvey from "./videos/7InTheWild-AP-Survey.mp4";

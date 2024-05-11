@@ -55,14 +55,14 @@ const Navbar = ({ navigation = true }) => {
 
         <div className="ml-5 flex flex-row items-center justify-between">
           <a
-            href="https://www.instagram.com/"
+            href="https://www.instagram.com/niko.v_x/"
             target="#"
             className="rounded-full h-8 w-8 flex items-center justify-center bg-gray-800 hover:bg-gray-700 border hover:border-white border-gray-400 mr-2"
           >
             <img src={images.instaLogo} className="h-6 w-6" />
           </a>
           <a
-            href="https://www.github.com/"
+            href="https://github.com/niko1405"
             target="#"
             className="rounded-full h-8 w-8 flex items-center justify-center bg-gray-800 hover:bg-gray-700 border hover:border-white border-gray-400"
           >
