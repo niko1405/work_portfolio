@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import { RiCopyrightLine } from "react-icons/ri";
 
 import { skillSetList1, skillSetList2 } from "../constants";
+import { images } from "../assets";
 
 const SkillSetBar = ({
   img_source = "",
@@ -243,7 +244,7 @@ const About = () => {
         </svg>
       </a>
 
-      <div className="bg-[url('/work_portfolio/assets/images/aboutImage2.jpg')] w-full h-screen flex relative bg-cover parallax-image">
+      <div className="bg-[url('./assets/images/aboutImage2.jpg')] w-full h-screen flex relative bg-cover parallax-image">
         <div className="fixed flex flex-col items-center w-full top-1/3">
           <motion.div
             initial={{ opacity: 0, x: -20 }}
@@ -304,7 +305,7 @@ const About = () => {
 
         <div className="w-full h-full flex flex-row mobile:flex-col relative pt-7">
           <div className="w-1/2 pl-7 mobile:w-full h-fit relative">
-            <img src="/work_portfolio/assets/images/Nikolas.png" width="90%" />
+            <img src={images.Nikolas} width="90%" />
             <motion.div
               initial={{ width: "90%", opacity: 1 }}
               whileInView={{ width: 0, opacity: 0.5 }}
@@ -344,7 +345,7 @@ const About = () => {
 
       <div
         id="thirdAboutPage"
-        className="bg-[url('/work_portfolio/assets/images/aboutImage3.jpg')] parallax-image bg-cover w-full min-h-screen flex flex-col relative"
+        className="bg-[url('./assets/images/aboutImage3.jpg')] parallax-image bg-cover w-full min-h-screen flex flex-col relative"
       >
         <div className="w-full pl-2 pt-7 flex flex-row relative">
           <div className="w-1/3 max-w-[9rem] h-14 relative flex items-center">
@@ -360,18 +361,18 @@ const About = () => {
 
         <div className="w-full h-full flex flex-row mobile:flex-col relative p-7 mobile:items-center mobile:pt-0">
           <PassionSection
-            img="/work_portfolio/assets/images/technology.png"
+            img={images.technology}
             title="Technology"
             text="Technology has the power to change the world and the lives of individuals. Almost every sector of our daily life is impacted by technology. I want to be able to keep up with the latest technology and be able to respond to change. I want to be a part of spreading new innovations and I believe that this is the mission of engineers."
           />
           <PassionSection
-            img="/work_portfolio/assets/images/problem-solving.png"
+            img={images.problemSolving}
             title="Problem-Solving"
             text="Solving IT problems often involves creating innovative solutions, impacting the real-world which is highly motivating. I enjoy the challenges I am facing and therefore the opportunity for continuous learning and growth. On top of that comes the satisfaction of successfully overcoming obstacles and delivering effective solutions."
             delay={0.3}
           />
           <PassionSection
-            img="/work_portfolio/assets/images/business-world.png"
+            img={images.businessWorld}
             title="Business World"
             text="The business world is a hotbed of innovation and creativity. Similar to IT, the business world requires a strong problem-solving mindset and this dynamic and constantly changing system offers ample opportunities for learning, personal growth, and skill development which I'm passionate about. Businesses have the potential to create significant impact, also in driving societal change and progress. Being part of this global transformative process and making a difference makes me really feel determined to learn more about it!"
             delay={0.6}

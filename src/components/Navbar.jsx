@@ -6,6 +6,7 @@ import { useNavigate } from "react-router-dom";
 import { navLinks } from "../constants";
 import { setToggleMenuAction } from "../features/settings/settingsActions";
 import { setShowContactFormAction } from "../features/settings/settingsActions";
+import { images } from "../assets";
 
 const Navbar = ({ navigation = true }) => {
   const dispatch = useDispatch();
@@ -58,10 +59,7 @@ const Navbar = ({ navigation = true }) => {
             target="#"
             className="rounded-full h-8 w-8 flex items-center justify-center bg-gray-800 hover:bg-gray-700 border hover:border-white border-gray-400 mr-2"
           >
-            <img
-              src="/work_portfolio/assets/images/instagram.png"
-              className="h-6 w-6"
-            />
+            <img src={images.instaLogo} className="h-6 w-6" />
           </a>
           <a
             href="https://www.github.com/"

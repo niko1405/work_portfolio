@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import AppWrap from "../wrapper/AppWrap";
 import { PageHeader } from "../components";
 import { useNavigate } from "react-router-dom";
+import { images } from "../assets";
 
 const Work = () => {
   const navigate = useNavigate();
@@ -19,7 +20,7 @@ const Work = () => {
           className="w-1/2 mobile:w-full relative"
         >
           <img
-            src="/work_portfolio/assets/images/WebDev.jpg"
+            src={images.webDev}
             className="w-full h-auto shadow-2xl shadow-[#506b8a]"
           />
           <motion.div
