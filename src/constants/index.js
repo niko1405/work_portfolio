@@ -128,8 +128,8 @@ export const skillSetList2 = [
   },
   {
     img_source: images.react,
-    title: "React JS/Native",
-    rating: "3 years",
+    title: "ReactJS/Native",
+    rating: "3y",
     percentage: "80%",
   },
   {
