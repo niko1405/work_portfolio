@@ -25,7 +25,7 @@ const MenuOverlay = () => {
           toggleMenu
             ? "opacity-100 translate-y-0"
             : "opacity-0 -translate-y-full"
-        } justify-between items-center`}
+        } justify-between items-center pb-[3rem]`}
       >
         <ul className="flex flex-col items-start mt-10">
           {navLinks.map((nav, i) => (

@@ -4,15 +4,13 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
+    "dev": "vite --host",
     "build": "vite build",
     "preview": "vite preview"
   },
   "dependencies": {
     "@emailjs/browser": "^4.3.3",
     "@reduxjs/toolkit": "^1.9.3",
-    "@splinetool/react-spline": "^2.2.6",
-    "@splinetool/runtime": "^0.9.357",
     "autoprefixer": "^10.4.13",
     "framer-motion": "^10.0.1",
     "postcss": "^8.4.21",

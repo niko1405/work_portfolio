@@ -5,31 +5,60 @@ import { useLocation, useNavigate } from "react-router-dom";
 import { navLinks } from "../constants";
 import { setActiveAnchorTagAction } from "../features/settings/settingsActions";
 
+let scrollTimeOut = false;
+
 const Navigation = () => {
+  const [lastY, setLastY] = useState(1000);
+
+  const { activeAnchorTag } = useSelector((state) => state.settings);
+
   const dispatch = useDispatch();
   const navigate = useNavigate();
   const { hash } = useLocation();
 
-  const { activeAnchorTag } = useSelector((state) => state.settings);
+  const handleScroll = (scroll_down) => {
+    if (scrollTimeOut) return;
+    let i = navLinks.findIndex((el) => el.id === activeAnchorTag) || 0;
+
+    if (scroll_down) {
+      if (i >= navLinks.length - 1) return;
+      navigate(`#${navLinks[i + 1].id}`); //Scroll Down
+    } else {
+      if (i <= 0) return;
+      navigate(`#${navLinks[i - 1].id}`); //Scroll Up
+    }
+
+    scrollTimeOut = true;
+
+    setTimeout(() => {
+      scrollTimeOut = false;
+    }, 1 * 1000);
+  };
 
   useEffect(() => {
-    //catch scrolling for scroll snapping
-    const handleScroll = (event) => {
-      let i = navLinks.findIndex((el) => el.id === activeAnchorTag) || 0;
-
-      if (event.deltaY < 0) {
-        if (i <= 0) return;
-        navigate(`#${navLinks[i - 1].id}`); //Scroll Up
-      } else {
-        if (i >= navLinks.length - 1) return;
-        navigate(`#${navLinks[i + 1].id}`); //Scroll Down
-      }
+    const handleWheelScroll = (event) => {
+      handleScroll(event.deltaY > 0);
     };
 
-    window.addEventListener("wheel", handleScroll);
+    const handleTouchStart = (e) => {
+      setLastY(e.touches[0].clientY);
+    };
+
+    const handleTouchEnd = (e) => {
+      const currentY = e.changedTouches[0].clientY;
+      if (Math.abs(currentY - lastY) < 30) return;
+
+      handleScroll(lastY > currentY);
+    };
+
+    window.addEventListener("wheel", handleWheelScroll);
+    window.addEventListener("touchstart", handleTouchStart);
+    window.addEventListener("touchend", handleTouchEnd);
 
     return () => {
-      window.removeEventListener("wheel", handleScroll);
+      window.removeEventListener("wheel", handleWheelScroll);
+      window.removeEventListener("touchstart", handleTouchStart);
+      window.removeEventListener("touchend", handleTouchEnd);
     };
   }, [activeAnchorTag]);
 
@@ -60,14 +89,14 @@ const Navigation = () => {
               i < navLinks.length - 1 ? "mobile:mr-7" : "mobile:mr-0"
             } ss:h-[2.5px] mobile:w-[2.5px]`}
           >
-            <a
-              href={`#${nav.id}`}
+            <div
+              onClick={() => navigate(`#${nav.id}`)}
               className={`${
                 activeAnchorTag === `${nav.id}`
                   ? "ss:w-[35px] h-[35px]"
                   : "ss:w-[20px] h-[20px]"
               } ss:h-full w-full relative block ss:w-[24px] cursor-pointer duration-300 rounded-xl bg-white`}
-            ></a>
+            ></div>
           </li>
         ))}
       </ul>

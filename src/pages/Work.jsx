@@ -3,9 +3,11 @@ import { AnimatePresence, motion, useSpring } from "framer-motion";
 import { useLocation, useNavigate } from "react-router-dom";
 import Modal from "react-modal";
 import { IoClose } from "react-icons/io5";
+import { IoIosArrowDropdown, IoIosArrowDropup } from "react-icons/io";
 
 import { parallaxCards, workItems, workSections } from "../constants";
 import { images } from "../assets";
+import { useDetectScreen } from "../hooks";
 
 const MCPluginDetails = () => {
   return (
@@ -651,7 +653,7 @@ const Single = ({ item, activeSection, handleDetailsModal }) => {
   return (
     <motion.section
       id={item.id}
-      className="work-section text-white flex justify-center items-center w-full"
+      className="work-section text-white flex justify-center items-center w-full pt-[5rem]"
     >
       <div className="flex items-center justify-center w-full h-full p-[3rem] mobile:flex-col">
         <AnimatePresence>
@@ -716,12 +718,13 @@ const Single = ({ item, activeSection, handleDetailsModal }) => {
 let delayScrolling = false;
 
 const Work = () => {
-  const [activeSection, setActiveSection] = useState("main");
-  const [showDetails, setShowDetails] = useState(false);
-
   const scrollRef = useRef();
   const navigate = useNavigate();
+  const screen = useDetectScreen();
   const { hash } = useLocation();
+
+  const [activeSection, setActiveSection] = useState("main");
+  const [showDetails, setShowDetails] = useState(false);
 
   const scaleX = useSpring(1, { stiffness: 100, damping: 30 });
 
@@ -734,40 +737,44 @@ const Work = () => {
     }, 0.2 * 1000);
   }, []);
 
+  const handleScroll = (scroll_down) => {
+    if (showDetails) return;
+    if (delayScrolling) return; //prevent overscrolling
+
+    //find index in list for active section
+    let i = workSections.findIndex((el) => el.title === activeSection) || 0;
+
+    if (scroll_down) {
+      if (i >= workSections.length - 1) return;
+      let newSection = workSections[i + 1];
+      navigate(`#${newSection.title}`); //Scroll Down
+
+      if (i !== 0) scaleX.set(newSection.progress);
+    } else {
+      if (i <= 0) return;
+      let newSection = workSections[i - 1];
+      navigate(`#${newSection.title}`); //Scroll Up
+
+      if (i !== 0) scaleX.set(newSection.progress);
+    }
+
+    delayScrolling = true;
+
+    setTimeout(() => {
+      delayScrolling = false;
+    }, 1 * 1000);
+  };
+
   useEffect(() => {
     //catch scrolling for scroll snapping
-    const handleScroll = (event) => {
-      if (showDetails) return;
-      if (delayScrolling) return; //prevent overscrolling
-
-      //find index in list for active section
-      let i = workSections.findIndex((el) => el.title === activeSection) || 0;
-
-      if (event.deltaY < 0) {
-        if (i <= 0) return;
-        let newSection = workSections[i - 1];
-        navigate(`#${newSection.title}`); //Scroll Up
-
-        if (i !== 0) scaleX.set(newSection.progress);
-      } else {
-        if (i >= workSections.length - 1) return;
-        let newSection = workSections[i + 1];
-        navigate(`#${newSection.title}`); //Scroll Down
-
-        if (i !== 0) scaleX.set(newSection.progress);
-      }
-
-      delayScrolling = true;
-
-      setTimeout(() => {
-        delayScrolling = false;
-      }, 0.5 * 1000);
+    const handleWheelScroll = (e) => {
+      handleScroll(e.deltaY > 0);
     };
 
-    window.addEventListener("wheel", handleScroll);
+    window.addEventListener("wheel", handleWheelScroll);
 
     return () => {
-      window.removeEventListener("wheel", handleScroll);
+      window.removeEventListener("wheel", handleWheelScroll);
     };
   }, [activeSection, showDetails]);
 
@@ -840,7 +847,7 @@ const Work = () => {
   return (
     <div className="bg-[#06111d] work-container relative">
       {!showDetails ? (
-        <a className="back-arrow" href="./#work">
+        <a className="back-arrow" href="./#home">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="100%"
@@ -862,6 +869,21 @@ const Work = () => {
             </g>
           </svg>
         </a>
+      ) : null}
+
+      {screen.mobile && !showDetails ? (
+        <div className="fixed right-2 bottom-2 flex flex-col justify-center items-center z-30">
+          <IoIosArrowDropup
+            color="gray"
+            size={35}
+            onClick={() => handleScroll(false)}
+          />
+          <IoIosArrowDropdown
+            color="gray"
+            size={35}
+            onClick={() => handleScroll(true)}
+          />
+        </div>
       ) : null}
 
       <div id="main-work-section" className="w-full work-section flex">
@@ -942,7 +964,7 @@ const Work = () => {
               transition={{ duration: 0.6, ease: "easeOut" }}
               className="scrollDown text-xs font-truculenta"
             >
-              SCROLLDOWN
+              {screen.mobile ? "ARROWDOWN" : "SCROLLDOWN"}
             </motion.div>
           ) : null}
         </AnimatePresence>

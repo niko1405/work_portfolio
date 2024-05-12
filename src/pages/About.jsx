@@ -221,7 +221,7 @@ const About = () => {
 
   return (
     <div className="overflow-auto relative">
-      <a className="back-arrow" href="./#about">
+      <a className="back-arrow" href="./#home">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="100%"

@@ -612,7 +612,7 @@ body {
   overflow: hidden;
   display: inline-block;
   animation: marquee 10s linear infinite;
-  animation-delay: 3s;
+  animation-delay: 2s;
 }
 
 .menu-text-marquee p {
@@ -632,7 +632,7 @@ body {
 .work-container {
   scroll-behavior: smooth;
   height: 100vh;
-  overflow-y: scroll;
+  overflow-y: hidden;
   scroll-snap-type: y mandatory;
   scrollbar-width: none;
   -ms-overflow-style: none;
@@ -649,12 +649,6 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-}
-
-body {
-  /* overflow: hidden; */
-  /* perspective: 1800px; */
-  /* margin: 0 20px; */
 }
 
 #work-header {

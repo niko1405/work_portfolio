@@ -33,7 +33,7 @@ export const workItems = [
     progress: "67%",
     title: "Social Media Web App",
     img: images.memoriesProject,
-    desc: "After developing a few games with Unity, I worked my way into web development. I started with front-end applications and this social media project w./as my first full-stack application. It is a MERN stack CRUD application (React.js + Node.js + Express + MongoDB) where the back-end server uses Node.js + Express for REST APIs and the front-end side is a React client with React Router and Axios.",
+    desc: "After developing a few games with Unity, I worked my way into web development. I started with front-end applications and this social media project was my first full-stack application. It is a MERN stack CRUD application (React.js + Node.js + Express + MongoDB) where the back-end server uses Node.js + Express for REST APIs and the front-end side is a React client with React Router and Axios.",
     btn: "See more",
   },
   {
@@ -41,14 +41,14 @@ export const workItems = [
     progress: "34%",
     title: "7InTheWild - Mobile App",
     img: images.SevenWild,
-    desc: 'After a few web projects, I wanted to develop an app for mobile devices. I chose the React Native and Expo Jav./ascript frameworks to create my native mobile application. The name of the app reveals that it is about the german survival show "7 vs Wild", where you can stay in touch and up to date with each other and through blog posts. You can find out the latest trends around "7 vs Wild" through your own created surveys and community surveys.',
+    desc: 'After a few web projects, I wanted to develop an app for mobile devices. I chose the React Native and Expo Javascript frameworks to create my native mobile application. The name of the app reveals that it is about the german survival show "7 vs Wild", where you can stay in touch and up to date with each other and through blog posts. You can find out the latest trends around "7 vs Wild" through your own created surveys and community surveys.',
     btn: "See more",
   },
   {
     id: "portfolio",
     title: "My portfolio",
     img: images.portfolio,
-    desc: "After several projects in different are./as such ./as game development in Unity with C#, plugin development in Java, web/mobile development in Jav./ascript and recently Python script programming, I decided to create a portfolio where I can include my previous projects and add more over time. The portfolio w./as developed with the Jav./ascript library ReactJS and uses framer-motion for most of the animations on the website.",
+    desc: "After several projects in different areas such as game development in Unity with C#, plugin development in Java, web/mobile development in Javascript and recently Python script programming, I decided to create a portfolio where I can include my previous projects and add more over time. The portfolio was developed with the Javascript library ReactJS and uses framer-motion for most of the animations on the website.",
   },
 ];
 
@@ -96,7 +96,7 @@ export const skillSetList1 = [
   {
     img_source: images.daVinci,
     title: "DaVinci Resolve",
-    rating: "b./asic",
+    rating: "basic",
     percentage: "60%",
   },
   {
@@ -141,13 +141,13 @@ export const skillSetList2 = [
   {
     img_source: images.python,
     title: "Python",
-    rating: "b./asic",
+    rating: "basic",
     percentage: "60%",
   },
   {
     img_source: images.mongoDB,
     title: "MongoDB",
-    rating: "b./asic",
+    rating: "basic",
     percentage: "60%",
   },
 ];
