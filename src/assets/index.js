@@ -18,6 +18,7 @@ import mongoDB from "./images/mongoDB.png";
 import mso from "./images/mso.png";
 import mso2 from "./images/mso2.png";
 import Nikolas from "./images/Nikolas.png";
+import Niko from "./images/Niko.jpg";
 import nodeJS from "./images/nodeJS.png";
 import portfolio from "./images/portfolio.png";
 import problemSolving from "./images/problem-solving.png";
@@ -79,6 +80,7 @@ export const images = {
   mso,
   mso2,
   Nikolas,
+  Niko,
   nodeJS,
   portfolio,
   problemSolving,

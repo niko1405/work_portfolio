@@ -304,32 +304,34 @@ const About = () => {
         </div>
 
         <div className="w-full h-full flex flex-row mobile:flex-col relative pt-7">
-          <div className="w-1/2 pl-7 mobile:w-full h-fit relative">
-            <img src={images.Nikolas} width="90%" />
+          <div className="w-1/3 mobile:w-full h-full relative flex justify-center">
+            <img src={images.Niko} width="80%" />
             <motion.div
               initial={{ width: "90%", opacity: 1 }}
               whileInView={{ width: 0, opacity: 0.5 }}
               transition={{ duration: 1, ease: "easeOut" }}
-              className="top-0 left-0 ml-7 mr-[-1.75rem] absolute h-full bg-gray-800"
+              className="top-0 left-0 ml-9 mr-[-1.75rem] absolute h-full bg-gray-800"
             />
           </div>
-          <div className="w-1/2 mobile:w-full pl-7 pr-7 flex flex-col relative mobile:mt-7">
-            <p className="text-2xl font-truculenta font-bold tracking-wide text-gray-800 mb-1">
-              NIKOLAS VIX
-            </p>
-            <div className="flex flex-col w-1/3 relative mb-3">
-              <motion.div
-                initial={{ width: 0 }}
-                whileInView={{ width: "66%" }}
-                transition={{ duration: 0.8, ease: "easeOut" }}
-                className="h-[2px] bg-gray-700 self-start mb-1"
-              />
-              <motion.div
-                initial={{ width: 0 }}
-                whileInView={{ width: "66%" }}
-                transition={{ duration: 0.8, ease: "easeOut" }}
-                className="w-3/4 h-[2px] bg-gray-700 self-end"
-              />
+          <div className="w-2/3 mobile:w-full pl-7 pr-7 flex flex-col relative mobile:mt-7 mobile:mb-6">
+            <div className="w-fit">
+              <p className="text-2xl font-truculenta font-bold tracking-wide text-gray-800 mb-1">
+                NIKOLAS VIX
+              </p>
+              <div className="flex flex-col w-full relative mb-3">
+                <motion.div
+                  initial={{ width: 0 }}
+                  whileInView={{ width: "66%" }}
+                  transition={{ duration: 0.8, ease: "easeOut" }}
+                  className="h-[2px] bg-gray-700 self-start mb-1"
+                />
+                <motion.div
+                  initial={{ width: 0 }}
+                  whileInView={{ width: "66%" }}
+                  transition={{ duration: 0.8, ease: "easeOut" }}
+                  className="w-3/4 h-[2px] bg-gray-700 self-end"
+                />
+              </div>
             </div>
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -406,7 +408,7 @@ const About = () => {
               title="German (first language)"
               percentage={100}
             />
-            <SkillSetCircularBar title="English (fluently)" percentage={90} />
+            <SkillSetCircularBar title="English (fluently)" percentage={87} />
             <SkillSetCircularBar title="French" percentage={55} />
           </div>
 
