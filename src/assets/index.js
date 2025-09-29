@@ -4,7 +4,6 @@ import aboutImage from "./images/aboutImage2.jpg";
 import aboutImageDark from "./images/aboutImage3.jpg";
 import aboutPic from "./images/AboutPic.png";
 import blender from "./images/logos/blender.png";
-import bukkit from "./images/works/bukkit.png";
 import daVinci from "./images/logos/daVinci.png";
 import figma from "./images/logos/figma.png";
 import github from "./images/logos/github.png";
@@ -68,7 +67,6 @@ export const images = {
   aboutImageDark,
   aboutPic,
   blender,
-  bukkit,
   daVinci,
   figma,
   github,
