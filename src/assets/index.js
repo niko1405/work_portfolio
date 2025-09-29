@@ -1,35 +1,37 @@
-import instaLogo from "./images/instagram.png";
-import SevenWild from "./images/7vsWild.png";
+import instaLogo from "./images/logos/instagram.png";
+import SevenWild from "./images/works/7vsWild.png";
 import aboutImage from "./images/aboutImage2.jpg";
 import aboutImageDark from "./images/aboutImage3.jpg";
 import aboutPic from "./images/AboutPic.png";
-import blender from "./images/blender.png";
-import bukkit from "./images/bukkit.png";
-import daVinci from "./images/daVinci.png";
-import figma from "./images/figma.png";
-import github from "./images/github.png";
-import html_css from "./images/html_css.png";
-import inkscape from "./images/inkscape.png";
-import instagram2 from "./images/instagram2.png";
-import javascript from "./images/javascript.png";
-import mcCoding from "./images/mc-coding.png";
-import memoriesProject from "./images/memories-project.png";
-import mongoDB from "./images/mongoDB.png";
-import mso from "./images/mso.png";
-import mso2 from "./images/mso2.png";
+import blender from "./images/logos/blender.png";
+import bukkit from "./images/works/bukkit.png";
+import daVinci from "./images/logos/daVinci.png";
+import figma from "./images/logos/figma.png";
+import github from "./images/logos/github.png";
+import html_css from "./images/logos/html_css.png";
+import inkscape from "./images/logos/inkscape.png";
+import instagram2 from "./images/logos/instagram2.png";
+import javascript from "./images/logos/javascript.png";
+import mcCoding from "./images/works/mc-coding.png";
+import memoriesProject from "./images/works/memories-project.png";
+import mongoDB from "./images/logos/mongoDB.png";
+import mso from "./images/logos/mso.png";
+import mso2 from "./images/logos/mso2.png";
 import Nikolas from "./images/Nikolas.png";
 import Niko from "./images/Niko.jpg";
-import nodeJS from "./images/nodeJS.png";
-import portfolio from "./images/portfolio.png";
+import nodeJS from "./images/logos/nodeJS.png";
+import portfolio from "./images/works/portfolio.png";
 import problemSolving from "./images/problem-solving.png";
-import processing from "./images/processing.png";
-import python from "./images/python.png";
-import react from "./images/react.png";
-import spline from "./images/spline.png";
+import processing from "./images/logos/processing.png";
+import python from "./images/logos/python.png";
+import react from "./images/logos/react.png";
+import spline from "./images/logos/spline.png";
 import technology from "./images/technology.png";
 import techWallpaper from "./images/tech-wallpaper.jpeg";
-import unity from "./images/unity.png";
-import vsCode from "./images/vsCode.png";
+import unity from "./images/logos/unity.png";
+import vsCode from "./images/logos/vsCode.png";
+import csharp from "./images/logos/csharp.png";
+
 import webDev from "./images/WebDev.jpg";
 import bgParallax from "./images/main-bg-parallax.png";
 import businessWorld from "./images/business-world.png";
@@ -92,6 +94,7 @@ export const images = {
   techWallpaper,
   unity,
   vsCode,
+  csharp,
   webDev,
   bgParallax,
   businessWorld,

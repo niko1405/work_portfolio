@@ -111,6 +111,12 @@ export const skillSetList1 = [
     rating: "5 months",
     percentage: "55%",
   },
+  {
+    img_source: images.csharp,
+    title: "C#",
+    rating: "very good",
+    percentage: "85%",
+  },
 ];
 
 export const skillSetList2 = [
@@ -142,13 +148,13 @@ export const skillSetList2 = [
     img_source: images.python,
     title: "Python",
     rating: "basic",
-    percentage: "60%",
+    percentage: "45%",
   },
   {
     img_source: images.mongoDB,
     title: "MongoDB",
     rating: "basic",
-    percentage: "60%",
+    percentage: "50%",
   },
 ];
 

@@ -339,7 +339,9 @@ const About = () => {
               transition={{ duration: 0.8, ease: "easeOut" }}
               className="text-xl font-truculenta tracking-wide text-gray-800"
             >
-              {`Hi! My name is Nikolas, I'm 19 years old and since I was a child I had a passion for writing code and programming. I gained the majority of my knowledge in this area just by watching tutorials and through learning by doing. This involved hours of trying to solve certain problems and understand new technical concepts, where success in the end always motivated me to keep going. I've always been fascinated by the possibilities that can be achieved with just a few lines of code and how technology is impacting our daily life. My learning curve steadily increased and I was very determined to improve my coding skills as I kept reading and trying new things. I know that this is still the start of my journey and there's a lot more to learn which I'm really excited about!`}
+              {`Hi! My name is Nikolas, I'm ${
+                parseInt(new Date().getFullYear()) - 2005
+              } years old and since I was a child I had a passion for writing code and programming. I gained the majority of my knowledge in this area just by watching tutorials and through learning by doing. This involved hours of trying to solve certain problems and understand new technical concepts, where success in the end always motivated me to keep going. I've always been fascinated by the possibilities that can be achieved with just a few lines of code and how technology is impacting our daily life. My learning curve steadily increased and I was very determined to improve my coding skills as I kept reading and trying new things. Currently I'm studying business informatics at University of applied science and technology in Karlsruhe. I know that this is still the start of my journey and there's a lot more to learn which I'm really excited about!`}
             </motion.div>
           </div>
         </div>
@@ -408,8 +410,9 @@ const About = () => {
               title="German (first language)"
               percentage={100}
             />
-            <SkillSetCircularBar title="English (fluently)" percentage={87} />
-            <SkillSetCircularBar title="French" percentage={55} />
+            <SkillSetCircularBar title="English (fluently)" percentage={85} />
+            <SkillSetCircularBar title="French" percentage={45} />
+            <SkillSetCircularBar title="French" percentage={20} />
           </div>
 
           <p className="mt-10 text-xl font-bold font-sono_bold tracking-[.2rem] mobile:tracking-[.1rem] text-gray-800">

@@ -38,7 +38,7 @@ const AppWrap = (Component, idName, classNames) =>
           <div className="ss:flex hidden absolute bottom-1 right-1 flex-row items-center justify-center">
             <RiCopyrightLine color="gray" size={14} />
             <p className="text-gray-500 pl-1 uppercase text-[10px]">
-              2024 Nikolas
+              {`${new Date().getFullYear().toString()} `} Nikolas
             </p>
           </div>
         </div>
