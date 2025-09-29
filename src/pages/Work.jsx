@@ -25,9 +25,10 @@ const MCPluginDetails = () => {
           loop
           autoPlay
           className="w-1/2 noDesktop:w-full"
-        >
-          <source src={images.bukkitLobbySystem} type="video/mp4" />
-        </motion.video>
+          src={videos.bukkitLobbySystem}
+        />
+        {/* <source src={images.bukkitLobbySystem} type="video/mp4" /> */}
+        {/* </motion.video> */}
         <motion.div
           initial={{ opacity: 0, x: 30 }}
           animate={{ opacity: 1, x: 0 }}
