@@ -1,8 +1,4 @@
 import instaLogo from "./images/logos/instagram.png";
-import SevenWild from "./images/works/7vsWild.png";
-import aboutImage from "./images/aboutImage2.jpg";
-import aboutImageDark from "./images/aboutImage3.jpg";
-import aboutPic from "./images/AboutPic.png";
 import blender from "./images/logos/blender.png";
 import daVinci from "./images/logos/daVinci.png";
 import figma from "./images/logos/figma.png";
@@ -11,31 +7,38 @@ import html_css from "./images/logos/html_css.png";
 import inkscape from "./images/logos/inkscape.png";
 import instagram2 from "./images/logos/instagram2.png";
 import javascript from "./images/logos/javascript.png";
-import mcCoding from "./images/works/mc-coding.png";
-import memoriesProject from "./images/works/memories-project.png";
+import unity from "./images/logos/unity.png";
+import vsCode from "./images/logos/vsCode.png";
+import csharp from "./images/logos/csharp.png";
 import mongoDB from "./images/logos/mongoDB.png";
 import mso from "./images/logos/mso.png";
 import mso2 from "./images/logos/mso2.png";
-import Niko from "./images/Niko.jpg";
-import nodeJS from "./images/logos/nodeJS.png";
-import portfolio from "./images/works/portfolio.png";
-import problemSolving from "./images/problem-solving.png";
 import processing from "./images/logos/processing.png";
 import python from "./images/logos/python.png";
 import react from "./images/logos/react.png";
 import spline from "./images/logos/spline.png";
-import technology from "./images/technology.png";
+import nodeJS from "./images/logos/nodeJS.png";
+
+import aboutImage from "./images/about/aboutImage2.jpg";
+import aboutImageDark from "./images/about/aboutImage3.jpg";
+import Niko from "./images/about/Niko.jpg";
+import problemSolving from "./images/about/problem-solving.png";
+import technology from "./images/about/technology.png";
+import businessWorld from "./images/about/business-world.png";
+
+import aboutPic from "./images/container/AboutPic.png";
+import webDev from "./images/container/WebDev.jpg";
+
+import SevenWild from "./images/works/7vsWild.png";
+import portfolio from "./images/works/portfolio.png";
+import mcCoding from "./images/works/mc-coding.png";
+import memoriesProject from "./images/works/memories-project.png";
+import sevenWildRegister from "./images/works/7InTheWild-Register.jpg";
+import cardBg from "./images/works/cardBackground.jpg";
+
 import techWallpaper from "./images/tech-wallpaper.jpeg";
-import unity from "./images/logos/unity.png";
-import vsCode from "./images/logos/vsCode.png";
-import csharp from "./images/logos/csharp.png";
-
-import webDev from "./images/WebDev.jpg";
 import bgParallax from "./images/main-bg-parallax.png";
-import businessWorld from "./images/business-world.png";
-import cardBg from "./images/cardBackground.jpg";
 
-import sevenWildRegister from "./images/7InTheWild/7InTheWild-Register.jpg";
 import sevenWildAPHome from "./videos/7InTheWild-AP-Home.mp4";
 import sevenWildAPPost from "./videos/7InTheWild-AP-Post.mp4";
 import sevenWildAPSurvey from "./videos/7InTheWild-AP-Survey.mp4";
