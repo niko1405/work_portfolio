@@ -457,7 +457,7 @@ const About = () => {
         <div className="flex absolute bottom-1 right-1 flex-row items-center justify-center">
           <RiCopyrightLine color="white" size={14} />
           <p className="text-white font-sono_bold pl-1 uppercase text-sm">
-            2024 Nikolas
+            {`${new Date().getFullYear().toString()} `} Nikolas
           </p>
         </div>
       </div>

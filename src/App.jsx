@@ -1,9 +1,12 @@
-import React from "react";
+import { images } from "./assets";
+import { usePreloadImages } from "./hooks";
 
 import { Navbar, MenuOverlay, ScrollDown, Navigation } from "./components";
 import { About, Header, Contact, Work } from "./container";
 
 const App = () => {
+  usePreloadImages(Object.values(images));
+
   return (
     <div className="bg-[#011E3E] w-full overflow-hidden h-screen relative">
       <Navbar />
