@@ -12,8 +12,6 @@ import { useDetectScreen } from "../hooks";
 import usePreloadVideos from "../hooks/usePreloadVideos";
 
 const MCPluginDetails = () => {
-  usePreloadVideos(Object.values(videos));
-
   return (
     <div className="w-full h-full relative flex mt-4 flex-col noDesktop:mt-5 p-5">
       <div className="relative flex flex-row h-auto noDesktop:flex-col w-full">
@@ -68,7 +66,7 @@ const MCPluginDetails = () => {
           autoPlay
           className="w-1/2 noDesktop:w-full"
         >
-          <source src={images.bukkitJumper} type="video/mp4" />
+          <source src={videos.bukkitJumper} type="video/mp4" />
         </motion.video>
         <motion.div
           initial={{ opacity: 0, x: 30 }}
@@ -121,7 +119,7 @@ const SocialMediaAppDetails = () => {
           transition={{ duration: 0.5, damping: 0, delay: 0.2 }}
           className="relative flex flex-row w-1/2 h-auto noDesktop:flex-col noDesktop:w-full noDesktop:m-0 mr-4"
         >
-          <img src={images.memoHome} />
+          <img src={videos.memoHome} />
           <div className="flex flex-col items-start h-auto w-full pl-7 noDesktop:p-0 noDesktop:mt-5">
             <p className="text-2xl font-truculenta font-bold tracking-wide text-white mb-2">
               Memories - Social Media App
@@ -169,7 +167,7 @@ const SocialMediaAppDetails = () => {
         >
           <video muted loop autoPlay>
             <source
-              src={images.memoSettings}
+              src={videos.memoSettings}
               type="video/mp4"
               width="10%"
               height="auto"
@@ -195,7 +193,7 @@ const SocialMediaAppDetails = () => {
         >
           <video muted loop autoPlay>
             <source
-              src={images.memoSearch}
+              src={videos.memoSearch}
               type="video/mp4"
               width="10%"
               height="auto"
@@ -223,7 +221,7 @@ const SocialMediaAppDetails = () => {
         >
           <video muted loop autoPlay>
             <source
-              src={images.memoProfile}
+              src={videos.memoProfile}
               type="video/mp4"
               width="10%"
               height="auto"
@@ -251,7 +249,7 @@ const SocialMediaAppDetails = () => {
         >
           <video muted loop autoPlay>
             <source
-              src={images.memoMessages}
+              src={videos.memoMessages}
               type="video/mp4"
               width="10%"
               height="auto"
@@ -279,7 +277,7 @@ const SocialMediaAppDetails = () => {
         >
           <video muted loop autoPlay>
             <source
-              src={images.memoPosts}
+              src={videos.memoPosts}
               type="video/mp4"
               width="10%"
               height="auto"
@@ -318,7 +316,7 @@ const ReactNativeDetails = () => {
         >
           <video muted loop autoPlay>
             <source
-              src={images.sevenWildHome}
+              src={videos.sevenWildHome}
               type="video/mp4"
               width="10%"
               height="auto"
@@ -363,7 +361,7 @@ const ReactNativeDetails = () => {
         <div className="relative flex flex-row w-1/2 h-auto noDesktop:flex-col noDesktop:w-full mr-4">
           <video muted loop autoPlay>
             <source
-              src={images.sevenWildProfile}
+              src={videos.sevenWildProfile}
               type="video/mp4"
               width="10%"
               height="auto"
@@ -385,7 +383,7 @@ const ReactNativeDetails = () => {
         <div className="relative flex flex-row w-1/2 h-auto noDesktop:flex-col noDesktop:w-full">
           <video muted loop autoPlay>
             <source
-              src={images.sevenWildSurvey}
+              src={videos.sevenWildSurvey}
               type="video/mp4"
               width="10%"
               height="auto"
@@ -408,7 +406,7 @@ const ReactNativeDetails = () => {
         <div className="relative flex flex-row w-1/2 h-auto noDesktop:flex-col noDesktop:w-full mr-4">
           <video muted loop autoPlay>
             <source
-              src={images.sevenWildMessages}
+              src={videos.sevenWildMessages}
               type="video/mp4"
               width="10%"
               height="auto"
@@ -431,7 +429,7 @@ const ReactNativeDetails = () => {
         <div className="relative flex flex-row w-1/2 h-auto noDesktop:flex-col noDesktop:w-full">
           <video muted loop autoPlay>
             <source
-              src={images.sevenWildLiveChat}
+              src={videos.sevenWildLiveChat}
               type="video/mp4"
               width="10%"
               height="auto"
@@ -454,7 +452,7 @@ const ReactNativeDetails = () => {
         <div className="relative flex flex-row w-1/2 h-auto noDesktop:flex-col noDesktop:w-full mr-4">
           <video muted loop autoPlay>
             <source
-              src={images.sevenWildDiscover}
+              src={videos.sevenWildDiscover}
               type="video/mp4"
               width="10%"
               height="auto"
@@ -479,7 +477,7 @@ const ReactNativeDetails = () => {
         <div className="relative flex flex-row w-1/2 h-auto noDesktop:flex-col noDesktop:w-full">
           <video muted loop autoPlay>
             <source
-              src={images.sevenWildVoting}
+              src={videos.sevenWildVoting}
               type="video/mp4"
               width="10%"
               height="auto"
@@ -505,7 +503,7 @@ const ReactNativeDetails = () => {
         <div className="relative flex flex-row h-auto noDesktop:flex-col w-full mr-4">
           <video muted loop autoPlay>
             <source
-              src={images.sevenWildSettings}
+              src={videos.sevenWildSettings}
               type="video/mp4"
               width="10%"
               height="auto"
@@ -531,7 +529,7 @@ const ReactNativeDetails = () => {
       <div className="w-full noDesktop:h-auto h-full relative flex noDesktop:flex-col mt-[5rem] noDesktop:mt-5">
         <div className="relative flex flex-row h-auto noDesktop:flex-col w-full mr-4">
           <video muted loop autoPlay className="w-1/2 noDesktop:w-full">
-            <source src={images.sevenWildAPHome} type="video/mp4" />
+            <source src={videos.sevenWildAPHome} type="video/mp4" />
           </video>
           <div className="flex flex-col items-start h-auto w-full pl-7 noDesktop:p-0 noDesktop:mt-5">
             <p className="text-2xl font-truculenta font-bold tracking-wide text-white mb-2">
@@ -550,7 +548,7 @@ const ReactNativeDetails = () => {
       <div className="w-full noDesktop:h-auto h-full relative flex noDesktop:flex-col mt-[5rem] noDesktop:mt-5">
         <div className="relative flex flex-row h-auto noDesktop:flex-col w-full mr-4">
           <video muted loop autoPlay className="w-1/2 noDesktop:w-full">
-            <source src={images.sevenWildAPPost} type="video/mp4" />
+            <source src={videos.sevenWildAPPost} type="video/mp4" />
           </video>
           <div className="flex flex-col items-start h-auto w-full pl-7 noDesktop:p-0 noDesktop:mt-5">
             <p className="text-2xl font-truculenta font-bold tracking-wide text-white mb-2">
@@ -573,7 +571,7 @@ const ReactNativeDetails = () => {
       <div className="w-full noDesktop:h-auto h-full relative flex noDesktop:flex-col mt-[5rem] noDesktop:mt-5 pb-[4rem]">
         <div className="relative flex flex-row h-auto noDesktop:flex-col w-full mr-4">
           <video muted loop autoPlay className="w-1/2 noDesktop:w-full">
-            <source src={images.sevenWildAPSurvey} type="video/mp4" />
+            <source src={videos.sevenWildAPSurvey} type="video/mp4" />
           </video>
           <div className="flex flex-col items-start h-auto w-full pl-7 noDesktop:p-0 noDesktop:mt-5">
             <p className="text-2xl font-truculenta font-bold tracking-wide text-white mb-2">
@@ -723,6 +721,8 @@ const Single = ({ item, activeSection, handleDetailsModal }) => {
 let delayScrolling = false;
 
 const Work = () => {
+  usePreloadVideos(Object.values(videos));
+
   const scrollRef = useRef();
   const navigate = useNavigate();
   const screen = useDetectScreen();
