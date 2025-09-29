@@ -16,7 +16,6 @@ import memoriesProject from "./images/works/memories-project.png";
 import mongoDB from "./images/logos/mongoDB.png";
 import mso from "./images/logos/mso.png";
 import mso2 from "./images/logos/mso2.png";
-import Nikolas from "./images/Nikolas.png";
 import Niko from "./images/Niko.jpg";
 import nodeJS from "./images/logos/nodeJS.png";
 import portfolio from "./images/works/portfolio.png";
@@ -79,7 +78,6 @@ export const images = {
   mongoDB,
   mso,
   mso2,
-  Nikolas,
   Niko,
   nodeJS,
   portfolio,
