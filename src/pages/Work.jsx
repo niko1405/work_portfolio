@@ -6,10 +6,14 @@ import { IoClose } from "react-icons/io5";
 import { IoIosArrowDropdown, IoIosArrowDropup } from "react-icons/io";
 
 import { parallaxCards, workItems, workSections } from "../constants";
-import { images } from "../assets";
+import { images, videos } from "../assets";
 import { useDetectScreen } from "../hooks";
 
+import usePreloadVideos from "../hooks/usePreloadVideos";
+
 const MCPluginDetails = () => {
+  usePreloadVideos(Object.values(videos));
+
   return (
     <div className="w-full h-full relative flex mt-4 flex-col noDesktop:mt-5 p-5">
       <div className="relative flex flex-row h-auto noDesktop:flex-col w-full">

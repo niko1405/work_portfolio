@@ -99,6 +99,11 @@ export const images = {
   businessWorld,
   cardBg,
   sevenWildRegister,
+  memoAuth,
+  memoHome,
+};
+
+export const videos = {
   sevenWildAPHome,
   sevenWildAPPost,
   sevenWildAPSurvey,
@@ -117,6 +122,4 @@ export const images = {
   memoProfile,
   memoSearch,
   memoSettings,
-  memoAuth,
-  memoHome,
 };

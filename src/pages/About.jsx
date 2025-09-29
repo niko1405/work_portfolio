@@ -244,7 +244,7 @@ const About = () => {
         </svg>
       </a>
 
-      <div className="bg-[url('./assets/images/aboutImage2.jpg')] w-full h-screen flex relative bg-cover parallax-image">
+      <div className="bg-[url('./assets/images/about/aboutImage2.jpg')] w-full h-screen flex relative bg-cover parallax-image">
         <div className="fixed flex flex-col items-center w-full top-1/3">
           <motion.div
             initial={{ opacity: 0, x: -20 }}
@@ -349,7 +349,7 @@ const About = () => {
 
       <div
         id="thirdAboutPage"
-        className="bg-[url('./assets/images/aboutImage3.jpg')] parallax-image bg-cover w-full min-h-screen flex flex-col relative"
+        className="bg-[url('./assets/images/about/aboutImage3.jpg')] parallax-image bg-cover w-full min-h-screen flex flex-col relative"
       >
         <div className="w-full pl-2 pt-7 flex flex-row relative">
           <div className="w-1/3 max-w-[9rem] h-14 relative flex items-center">
