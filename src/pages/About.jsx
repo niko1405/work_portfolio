@@ -5,6 +5,7 @@ import { RiCopyrightLine } from "react-icons/ri";
 
 import { skillSetList1, skillSetList2 } from "../constants";
 import { images } from "../assets";
+import { calculateAge } from "../helper/index.js";
 
 const SkillSetBar = ({
   img_source = "",
@@ -339,9 +340,9 @@ const About = () => {
               transition={{ duration: 0.8, ease: "easeOut" }}
               className="text-xl font-truculenta tracking-wide text-gray-800"
             >
-              {`Hi! My name is Nikolas, I'm ${
-                parseInt(new Date().getFullYear()) - 2005
-              } years old and since I was a child I had a passion for writing code and programming. I gained the majority of my knowledge in this area just by watching tutorials and through learning by doing. This involved hours of trying to solve certain problems and understand new technical concepts, where success in the end always motivated me to keep going. I've always been fascinated by the possibilities that can be achieved with just a few lines of code and how technology is impacting our daily life. My learning curve steadily increased and I was very determined to improve my coding skills as I kept reading and trying new things. Currently I'm studying business informatics at University of applied science and technology in Karlsruhe. I know that this is still the start of my journey and there's a lot more to learn which I'm really excited about!`}
+              {`Hi! My name is Nikolas, I'm ${calculateAge(
+                new Date(2005, 5, 14)
+              )} years old. Since I was young I had a passion for writing code and programming. I gained the majority of my knowledge in this area just by watching tutorials and through learning by doing. This involved hours of trying to solve certain problems and understand new technical concepts, where success in the end always motivated me to keep going. I've always been fascinated by the possibilities that can be achieved with just a few lines of code and how technology is impacting our daily life. My learning curve steadily increased and I was very determined to improve my coding skills as I kept reading and trying new things. Currently I'm studying business informatics at University of applied science and technology in Karlsruhe. I know that this is still the start of my journey and there's a lot more to learn which I'm really excited about!`}
             </motion.div>
           </div>
         </div>
@@ -349,7 +350,8 @@ const About = () => {
 
       <div
         id="thirdAboutPage"
-        className="bg-[url('./assets/images/about/aboutImage3.jpg')] parallax-image bg-cover w-full min-h-screen flex flex-col relative"
+        style={{ backgroundImage: `url(${images.aboutImageDark})` }}
+        className=/*"bg-[url('./assets/images/about/aboutImage3.jpg')]*/ "parallax-image bg-cover w-full min-h-screen flex flex-col relative"
       >
         <div className="w-full pl-2 pt-7 flex flex-row relative">
           <div className="w-1/3 max-w-[9rem] h-14 relative flex items-center">
@@ -412,7 +414,7 @@ const About = () => {
             />
             <SkillSetCircularBar title="English (fluently)" percentage={85} />
             <SkillSetCircularBar title="French" percentage={45} />
-            <SkillSetCircularBar title="French" percentage={20} />
+            <SkillSetCircularBar title="Spanish" percentage={20} />
           </div>
 
           <p className="mt-10 text-xl font-bold font-sono_bold tracking-[.2rem] mobile:tracking-[.1rem] text-gray-800">

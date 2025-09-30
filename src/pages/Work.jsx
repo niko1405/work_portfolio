@@ -21,7 +21,6 @@ const MCPluginDetails = () => {
           transition={{ duration: 0.5, damping: 0, delay: 0.2 }}
           muted
           loop
-          autoPlay
           className="w-1/2 noDesktop:w-full"
           src={videos.bukkitLobbySystem}
         />
@@ -63,7 +62,6 @@ const MCPluginDetails = () => {
           transition={{ duration: 0.5, damping: 0, delay: 0.2 }}
           muted
           loop
-          autoPlay
           className="w-1/2 noDesktop:w-full"
         >
           <source src={videos.bukkitJumper} type="video/mp4" />
@@ -165,7 +163,7 @@ const SocialMediaAppDetails = () => {
           transition={{ duration: 0.5, damping: 0, delay: 0.2 }}
           className="relative flex flex-row w-1/2 h-auto noDesktop:flex-col noDesktop:w-full mr-4"
         >
-          <video muted loop autoPlay>
+          <video muted loop>
             <source
               src={videos.memoSettings}
               type="video/mp4"
@@ -191,7 +189,7 @@ const SocialMediaAppDetails = () => {
           transition={{ duration: 0.5, damping: 0, delay: 0.2 }}
           className="relative flex flex-row w-1/2 h-auto noDesktop:flex-col noDesktop:w-full"
         >
-          <video muted loop autoPlay>
+          <video muted loop>
             <source
               src={videos.memoSearch}
               type="video/mp4"
@@ -219,7 +217,7 @@ const SocialMediaAppDetails = () => {
           transition={{ duration: 0.5, damping: 0, delay: 0.2 }}
           className="relative flex flex-row w-1/2 h-auto noDesktop:flex-col noDesktop:w-full mr-4"
         >
-          <video muted loop autoPlay>
+          <video muted loop>
             <source
               src={videos.memoProfile}
               type="video/mp4"
@@ -247,7 +245,7 @@ const SocialMediaAppDetails = () => {
           transition={{ duration: 0.5, damping: 0, delay: 0.2 }}
           className="relative flex flex-row w-1/2 h-auto noDesktop:flex-col noDesktop:w-full"
         >
-          <video muted loop autoPlay>
+          <video muted loop>
             <source
               src={videos.memoMessages}
               type="video/mp4"
@@ -275,7 +273,7 @@ const SocialMediaAppDetails = () => {
           transition={{ duration: 0.5, damping: 0, delay: 0.2 }}
           className="relative flex flex-row h-auto noDesktop:flex-col w-full mr-4"
         >
-          <video muted loop autoPlay>
+          <video muted loop>
             <source
               src={videos.memoPosts}
               type="video/mp4"
@@ -314,7 +312,7 @@ const ReactNativeDetails = () => {
           transition={{ duration: 0.5, damping: 0, delay: 0.2 }}
           className="relative flex flex-row w-1/2 h-auto noDesktop:flex-col noDesktop:w-full mr-4"
         >
-          <video muted loop autoPlay>
+          <video muted loop>
             <source
               src={videos.sevenWildHome}
               type="video/mp4"
@@ -359,7 +357,7 @@ const ReactNativeDetails = () => {
       </div>
       <div className="w-full noDesktop:h-auto h-full relative flex noDesktop:flex-col mt-[5rem] noDesktop:mt-5">
         <div className="relative flex flex-row w-1/2 h-auto noDesktop:flex-col noDesktop:w-full mr-4">
-          <video muted loop autoPlay>
+          <video muted loop>
             <source
               src={videos.sevenWildProfile}
               type="video/mp4"
@@ -381,7 +379,7 @@ const ReactNativeDetails = () => {
           </div>
         </div>
         <div className="relative flex flex-row w-1/2 h-auto noDesktop:flex-col noDesktop:w-full">
-          <video muted loop autoPlay>
+          <video muted loop>
             <source
               src={videos.sevenWildSurvey}
               type="video/mp4"
@@ -404,7 +402,7 @@ const ReactNativeDetails = () => {
       </div>
       <div className="w-full noDesktop:h-auto h-full relative flex noDesktop:flex-col mt-[5rem] noDesktop:mt-5">
         <div className="relative flex flex-row w-1/2 h-auto noDesktop:flex-col noDesktop:w-full mr-4">
-          <video muted loop autoPlay>
+          <video muted loop>
             <source
               src={videos.sevenWildMessages}
               type="video/mp4"
@@ -427,7 +425,7 @@ const ReactNativeDetails = () => {
           </div>
         </div>
         <div className="relative flex flex-row w-1/2 h-auto noDesktop:flex-col noDesktop:w-full">
-          <video muted loop autoPlay>
+          <video muted loop>
             <source
               src={videos.sevenWildLiveChat}
               type="video/mp4"
@@ -450,7 +448,7 @@ const ReactNativeDetails = () => {
       </div>
       <div className="w-full noDesktop:h-auto h-full relative flex noDesktop:flex-col mt-[5rem] noDesktop:mt-5">
         <div className="relative flex flex-row w-1/2 h-auto noDesktop:flex-col noDesktop:w-full mr-4">
-          <video muted loop autoPlay>
+          <video muted loop>
             <source
               src={videos.sevenWildDiscover}
               type="video/mp4"
@@ -475,7 +473,7 @@ const ReactNativeDetails = () => {
           </div>
         </div>
         <div className="relative flex flex-row w-1/2 h-auto noDesktop:flex-col noDesktop:w-full">
-          <video muted loop autoPlay>
+          <video muted loop>
             <source
               src={videos.sevenWildVoting}
               type="video/mp4"
@@ -501,7 +499,7 @@ const ReactNativeDetails = () => {
       </div>
       <div className="w-full noDesktop:h-auto h-full relative flex noDesktop:flex-col mt-[5rem] noDesktop:mt-5">
         <div className="relative flex flex-row h-auto noDesktop:flex-col w-full mr-4">
-          <video muted loop autoPlay>
+          <video muted loop>
             <source
               src={videos.sevenWildSettings}
               type="video/mp4"
@@ -528,7 +526,7 @@ const ReactNativeDetails = () => {
       </div>
       <div className="w-full noDesktop:h-auto h-full relative flex noDesktop:flex-col mt-[5rem] noDesktop:mt-5">
         <div className="relative flex flex-row h-auto noDesktop:flex-col w-full mr-4">
-          <video muted loop autoPlay className="w-1/2 noDesktop:w-full">
+          <video muted loop className="w-1/2 noDesktop:w-full">
             <source src={videos.sevenWildAPHome} type="video/mp4" />
           </video>
           <div className="flex flex-col items-start h-auto w-full pl-7 noDesktop:p-0 noDesktop:mt-5">
@@ -547,7 +545,7 @@ const ReactNativeDetails = () => {
       </div>
       <div className="w-full noDesktop:h-auto h-full relative flex noDesktop:flex-col mt-[5rem] noDesktop:mt-5">
         <div className="relative flex flex-row h-auto noDesktop:flex-col w-full mr-4">
-          <video muted loop autoPlay className="w-1/2 noDesktop:w-full">
+          <video muted loop className="w-1/2 noDesktop:w-full">
             <source src={videos.sevenWildAPPost} type="video/mp4" />
           </video>
           <div className="flex flex-col items-start h-auto w-full pl-7 noDesktop:p-0 noDesktop:mt-5">
@@ -570,7 +568,7 @@ const ReactNativeDetails = () => {
       </div>
       <div className="w-full noDesktop:h-auto h-full relative flex noDesktop:flex-col mt-[5rem] noDesktop:mt-5 pb-[4rem]">
         <div className="relative flex flex-row h-auto noDesktop:flex-col w-full mr-4">
-          <video muted loop autoPlay className="w-1/2 noDesktop:w-full">
+          <video muted loop className="w-1/2 noDesktop:w-full">
             <source src={videos.sevenWildAPSurvey} type="video/mp4" />
           </video>
           <div className="flex flex-col items-start h-auto w-full pl-7 noDesktop:p-0 noDesktop:mt-5">
